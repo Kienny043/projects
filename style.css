@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    min-height: 100vh;
+    background-image: url(nmiGxk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 40px; 
+    height: auto; 
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #3333332d;
+    backdrop-filter: blur(10px);
+    box-shadow: #555;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li:first-child {
+    margin-top: 20px;
+}
+.sidebar li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.sidebar a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu {
+    display: none;
+    position-anchor: right;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card {
+    width: 325px;
+    height: 350px ;
+    background-color: #f0f0f0b1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+.content p {
+    color: #363535;
+    font-size: 16px;
+    line-height:1.2;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 800px) {
+    .itago{
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .logo {
+        width: 40px;
+        height: auto;
+    }
+}
+@media(max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+    .logo {
+        width: 20px;
+        height: auto;
+    }
+}
+@media (max-width: 350px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 95%;  /* Make cards take full width */
+        height: auto; /* Let them expand naturally */
+        padding: 10px;
+    }
+
+    .card img {
+        height: 150px; /* Reduce image height */
+    }
+
+    .content h3 {
+        font-size: 16px; /* Make heading smaller */
+    }
+
+    .content p {
+        font-size: 14px; /* Make paragraph text smaller */
+    }
+    
+    .navbar {
+        padding: 5px 10px; /* Reduce navbar padding */
+    }
+
+    .logo img {
+        max-width: 30px; /* Scale down the logo */
+    }
+
+    .menu svg {
+        width: 20px; /* Make menu button smaller */
+        height: 20px;
+    }
+}
