@@ -17,6 +17,7 @@ body {
     justify-content: space-between;
     background-color: #333;
     padding: 10px 20px;
+    min-width: 320px;
 }
 
 .logo img {
@@ -116,23 +117,6 @@ nav ul {
     margin: 10px;
     margin-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width: 800px) {
     .itago{
         display: none;
@@ -149,45 +133,8 @@ nav ul {
     .sidebar {
         width: 100%;
     }
-    .logo {
-        width: 20px;
-        height: auto;
-    }
-}
-@media (max-width: 350px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .card {
-        width: 95%;  /* Make cards take full width */
-        height: auto; /* Let them expand naturally */
-        padding: 10px;
-    }
-
-    .card img {
-        height: 150px; /* Reduce image height */
-    }
-
-    .content h3 {
-        font-size: 16px; /* Make heading smaller */
-    }
-
-    .content p {
-        font-size: 14px; /* Make paragraph text smaller */
-    }
-    
-    .navbar {
-        padding: 5px 10px; /* Reduce navbar padding */
-    }
-
     .logo img {
-        max-width: 30px; /* Scale down the logo */
-    }
-
-    .menu svg {
-        width: 20px; /* Make menu button smaller */
-        height: 20px;
+        width: 40px;
+        height: auto;
     }
 }
